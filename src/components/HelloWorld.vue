@@ -65,6 +65,7 @@ export default {
             this.topicsList.push(...this.addTopic);
           }
       )
+      this.getList();
     },
     getPostsInCurrent(page){
       axios.get(`${URL}/page?arg=${page}`, {withCredentials: true}).then(
